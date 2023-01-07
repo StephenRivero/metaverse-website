@@ -19,11 +19,13 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
     {active !== id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 xl:bottom-20 xl:rotate-[-90deg] xl:origin-[0,0]">
+      
+      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 xl:bottom-20 xl:rotate-[-90deg]        xl:origin-[0,0] bg-[rgba(0,0,0,0.5)] xl:bg-transparent rounded-md py-1 px-2">
         {title}
       </h3>
+      
     ) : (
-      <div className="absolute bottom-0 p-8 flex justify-end w-full flex-col bg-transparent xl:bg-[rgba(0,0,0,0.5)] rounded-b-[24px] h-full lg:h-fit rounded-t-[24px] lg:rounded-t-none">
+      <div className="absolute bottom-0 p-2 sm:p-4 xl:p-8 flex justify-end w-full flex-col bg-transparent xl:bg-[rgba(0,0,0,0.5)] rounded-b-[24px] h-full lg:h-fit rounded-t-[24px] lg:rounded-t-none">
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
@@ -36,7 +38,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase bg-[rgba(0,0,0,0.5)] xl:bg-transparent w-fit rounded-xl py-2 px-3">
           Enter Metaverse
         </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white bg-[rgba(0,0,0,0.5)] xl:bg-transparent w-fit rounded-xl py-1 px-3">
+        <h2 className="mt-[8px] sm:mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white bg-[rgba(0,0,0,0.5)] xl:bg-transparent w-fit rounded-xl py-1 px-3">
           {title}
         </h2>
       </div>
